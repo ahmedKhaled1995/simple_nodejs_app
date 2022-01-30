@@ -1,0 +1,20 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ahmedKhaled1995@bitbucket.org/ahmedkhaled1995/node_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ahmedkhaled1995/node_test#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
