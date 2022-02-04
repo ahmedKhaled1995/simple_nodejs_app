@@ -6,7 +6,7 @@ pipeline {
         
         stage('Pukking Repo Files') {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
+              git branch: '${GIT_BRANCH}', credentialsId: 'github', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
             }
         }
         
