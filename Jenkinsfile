@@ -15,7 +15,7 @@ pipeline {
                 sh ''' 
                 echo omar fandoud
                     ls
-                    cal
+                    
                 '''
             }
         }
