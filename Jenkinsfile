@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Getting Repo Files') {
             steps {
-                git branch: 'main', credentialsId: 'github_token', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
+                git branch: "${GIT_BRANCH}", credentialsId: 'github_token', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
             }
         }
         
