@@ -1,23 +1,17 @@
-
 pipeline {
     agent any
 
     stages {
-        
-        stage('Pukking Repo Files') {
+        stage('Getting Repo Files') {
             steps {
-              git branch: "${GIT_BRANCH}", credentialsId: 'github', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
+                git branch: 'main', credentialsId: 'github_token', url: 'https://github.com/ahmedKhaled1995/simple_nodejs_app.git'
             }
         }
         
-        stage('Stage 1') {
+        stage('Building Code') {
             steps {
-                sh ''' 
-                    ls
-                    date
-                '''
+                sh "docker build -t mynodeapp:v1.0 ."
             }
         }
-        
     }
 }
